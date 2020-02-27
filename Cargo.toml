@@ -1,5 +1,5 @@
 [package]
-name = "hello"
+name = "miniserver"
 version = "0.1.0"
 authors = ["Antonio Matheus <antonimathsilva@gmail.com>"]
 edition = "2018"

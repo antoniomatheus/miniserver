@@ -5,7 +5,7 @@ use std::net::TcpStream;
 use std::time::Duration;
 use std::thread;
 
-use hello::ThreadPool;
+use miniserver::ThreadPool;
 
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
@@ -17,7 +17,7 @@ fn main() {
         pool.execute(|| {
             handle_connection(stream);
         });
-    }
+    }   
 }
 
 fn handle_connection(mut stream: TcpStream) {
